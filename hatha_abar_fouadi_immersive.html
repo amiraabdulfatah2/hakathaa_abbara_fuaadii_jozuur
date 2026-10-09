@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071512">
+<title>هكذا عبر فؤادي | سعد بن معاذ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--night:#061310;--deep:#0a201a;--leaf:#183b2e;--gold:#d9bd79;--lightgold:#f1dfac;--ivory:#f5f0e5;--muted:#c1c8bc;--line:#d9bd7940}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--night);color:var(--ivory);font-family:"Amiri","Noto Naskh Arabic","Traditional Arabic",serif;font-size:19px;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 50% 0%,#214536 0%,#0c211a 38%,#061310 75%)}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:8;opacity:.14;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}button{font:inherit}
+.topbar{position:fixed;top:0;right:0;left:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px clamp(14px,4vw,48px);background:#061310c9;backdrop-filter:blur(14px);border-bottom:1px solid #d9bd791c}
+.brand{font-size:21px;color:var(--lightgold);font-weight:bold;white-space:nowrap}
+.nav{display:flex;gap:16px;align-items:center;font-family:"Cairo",sans-serif;font-size:12px;color:#d6d8cc}
+.nav a{transition:color .2s}.nav a:hover{color:var(--gold)}
+.sound{border:1px solid var(--line);background:#ffffff08;border-radius:50px;color:var(--lightgold);font-family:"Cairo",sans-serif;font-size:12px;padding:8px 12px;cursor:pointer}
+.progressline{position:fixed;top:0;right:0;height:3px;width:0;background:linear-gradient(90deg,#9fb79b,var(--gold));z-index:30}
+main{position:relative}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:110px 20px 70px;position:relative;isolation:isolate;overflow:hidden}
+.hero:before{content:"";position:absolute;width:min(75vw,610px);aspect-ratio:1;border:1px solid #d9bd7929;border-radius:50%;z-index:-1;box-shadow:0 0 0 35px #d9bd7907,0 0 0 85px #d9bd7904;animation:slowspin 60s linear infinite}
+.hero:after{content:"";position:absolute;width:6px;height:6px;top:24%;left:24%;border-radius:50%;background:var(--lightgold);box-shadow:0 0 20px 5px #d9bd7966,42vw 28vh 0 1px #d9bd79, -25vw 40vh 0 0 #d9bd79;opacity:.65}
+@keyframes slowspin{to{transform:rotate(360deg)}}
+.kicker{font-family:"Cairo",sans-serif;color:var(--gold);font-size:12px;letter-spacing:.16em;margin-bottom:16px}
+.hero-mark{font-size:32px;color:var(--gold);margin-bottom:12px;text-shadow:0 0 25px #d9bd7970}
+h1,h2,h3,p{margin-top:0}
+h1{font-size:clamp(48px,8.6vw,96px);line-height:1.12;color:var(--lightgold);font-weight:700;margin-bottom:20px;text-shadow:0 8px 45px #0008}
+.hero .sub{font-size:clamp(20px,3vw,25px);line-height:1.9;color:#e4e3d7;max-width:690px;margin:0 auto 28px}
+.hero .byline{font-family:"Cairo",sans-serif;font-size:12px;color:#b9c6b7;letter-spacing:.04em}
+.scroll-cue{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);font-family:"Cairo",sans-serif;font-size:12px;color:var(--gold);display:grid;gap:8px;justify-items:center}
+.scroll-cue span{display:block;width:1px;height:38px;background:linear-gradient(var(--gold),transparent);animation:down 1.6s infinite}
+@keyframes down{0%,100%{transform:scaleY(.7);transform-origin:top;opacity:.5}50%{transform:scaleY(1);opacity:1}}
+.chapter{width:min(920px,91vw);margin:auto;padding:clamp(80px,12vw,145px) 0;position:relative}
+.chapter-head{text-align:center;max-width:690px;margin:0 auto 45px}
+.chapter-no{display:inline-block;font-family:"Cairo",sans-serif;font-size:11px;color:var(--gold);border:1px solid var(--line);border-radius:50px;padding:6px 13px;margin-bottom:15px}
+h2{font-size:clamp(35px,5.4vw,58px);line-height:1.25;color:var(--lightgold);margin-bottom:15px}
+.lead{font-size:23px;line-height:1.9;color:#e6e1d3}
+.chapter p{line-height:2.15;color:#d8ddd3}
+.divider{display:flex;align-items:center;gap:15px;justify-content:center;color:var(--gold);margin:35px 0}
+.divider:before,.divider:after{content:"";height:1px;width:70px;background:var(--line)}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .9s ease,transform .9s ease}
+.reveal.seen{opacity:1;transform:translateY(0)}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}
+.feature{padding:22px 18px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(150deg,#193b2ed9,#0b1c17d9);text-align:center}
+.feature .icon{display:block;color:var(--gold);font-size:27px;margin-bottom:8px}
+.feature h3{color:var(--lightgold);font-size:23px;margin-bottom:8px}
+.feature p{font-size:17px;margin:0;line-height:1.8;color:var(--muted)}
+.immersive{position:relative;min-height:690px;border-block:1px solid #d9bd791b;overflow:hidden;background:radial-gradient(ellipse at 50% 46%,#17382c 0%,#0b2019 45%,#061310 80%);display:flex;align-items:center;justify-content:center;padding:80px 20px}
+.path-art{position:absolute;inset:0;pointer-events:none;opacity:.85}
+.path-art svg{width:100%;height:100%;position:absolute;inset:0}
+.path-content{width:min(780px,94vw);text-align:center;position:relative;z-index:2}
+.path-content h2{margin-bottom:10px}
+.path-content .hint{color:var(--muted);font-size:18px;line-height:1.9}
+.lightpoint{margin:35px auto 18px;position:relative;width:90px;height:90px;border:1px solid #f1dfacaa;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#f1dfac40 0%,#d9bd7914 48%,transparent 72%);color:var(--lightgold);font-size:31px;cursor:pointer;box-shadow:0 0 35px #d9bd7930;animation:glow 2.7s ease-in-out infinite}
+.lightpoint:before,.lightpoint:after{content:"";position:absolute;inset:-13px;border:1px solid #d9bd7944;border-radius:50%;animation:ripple 3s infinite}
+.lightpoint:after{inset:-28px;animation-delay:1.2s}
+@keyframes glow{50%{box-shadow:0 0 55px #d9bd7966;transform:scale(1.035)}}
+@keyframes ripple{0%,100%{transform:scale(.9);opacity:.25}50%{transform:scale(1.08);opacity:.7}}
+.hint-small{font-family:"Cairo",sans-serif;font-size:12px;color:var(--gold);margin-bottom:28px}
+.discovery{display:none;margin:25px auto 0;max-width:650px;padding:25px;border:1px solid var(--line);border-radius:20px;background:#071510dc;text-align:right;animation:rise .6s ease}
+.discovery.open{display:block}
+.discovery h3{font-size:28px;color:var(--lightgold);margin-bottom:10px}
+.discovery p{font-size:19px;line-height:2;margin-bottom:0}
+@keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+.choice-row{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:35px}
+.choice{min-height:165px;border:1px solid #d9bd7940;border-radius:18px;background:#0b201bd9;color:var(--ivory);padding:22px 15px;cursor:pointer;transition:.3s}
+.choice:hover,.choice.active{border-color:var(--gold);transform:translateY(-4px);background:#19392d;box-shadow:0 10px 32px #0003}
+.choice .icon{display:block;font-size:28px;color:var(--gold);margin-bottom:8px}
+.choice strong{display:block;color:var(--lightgold);font-size:22px;font-weight:700}
+.choice span{display:block;color:var(--muted);font-size:16px;line-height:1.7;margin-top:5px}
+.choice-detail{display:none;text-align:right;max-width:730px;margin:22px auto 0;padding:23px 25px;border-right:2px solid var(--gold);background:#d9bd790a;line-height:2.1;color:#e6e1d3}
+.choice-detail.open{display:block;animation:rise .45s ease}
+.quote{font-size:clamp(25px,4vw,39px);line-height:1.9;text-align:center;color:var(--lightgold);padding:32px 10px}
+.quote small{display:block;font-family:"Cairo",sans-serif;font-size:12px;color:var(--muted);margin-top:12px}
+.reflection-box{border:1px solid var(--line);border-radius:22px;padding:clamp(24px,5vw,45px);background:linear-gradient(140deg,#17382bd9,#091b16);margin-top:30px}
+.reflection-box p{font-size:21px}
+.final{min-height:85svh;display:grid;place-items:center;text-align:center;padding:100px 20px;background:radial-gradient(ellipse at center,#18382b 0%,#071512 67%)}
+.final-inner{max-width:750px}
+.final .seal{font-size:45px;color:var(--gold);margin-bottom:20px}
+.final h2{font-size:clamp(42px,7vw,76px)}
+.final p{font-size:23px;line-height:2.15;color:#e0e1d7}
+.final .signature{font-family:"Cairo",sans-serif;font-size:13px;color:var(--gold);margin-top:34px;line-height:2.1}
+footer{text-align:center;border-top:1px solid #d9bd791e;padding:22px 12px 32px;font-family:"Cairo",sans-serif;color:#8fa194;font-size:11px}
+@media(max-width:650px){.nav{gap:9px;font-size:10px}.nav a:nth-child(n+3){display:none}.brand{font-size:18px}.sound{font-size:10px;padding:7px 9px}.feature-grid,.choice-row{grid-template-columns:1fr}.feature{display:flex;align-items:center;text-align:right;gap:15px}.feature .icon{margin:0}.feature p{font-size:16px}.immersive{min-height:620px}.chapter{padding:78px 0}.lead{font-size:21px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="progressline" id="progressline"></div>
+<header class="topbar">
+  <a class="brand" href="#start">هكذا عبر فؤادي ✦</a>
+  <nav class="nav" aria-label="التنقل داخل الرحلة">
+    <a href="#beginning">البداية</a><a href="#islam">إسلامه</a><a href="#badr">بدر</a><a href="#lessons">الأثر</a>
+  </nav>
+  <button class="sound" id="soundBtn" type="button" aria-pressed="false">♫ الصوت: مغلق</button>
+</header>
+<main>
+<section class="hero" id="start">
+  <div>
+    <div class="hero-mark">✧ ❈ ✧</div>
+    <div class="kicker">مسار جذور · الدفعة الرابعة</div>
+    <h1>سعد بن معاذ</h1>
+    <p class="sub">رجلٌ عظيمٌ في قومه،<br>عظيمٌ في إيمانه ومواقفه.</p>
+    <p class="byline">رحلةٌ لا نقرأها فقط… بل نتأمل ما تتركه في القلب</p>
+  </div>
+  <a class="scroll-cue" href="#beginning">ابدئي الرحلة <span></span></a>
+</section>
+
+<section class="chapter reveal" id="beginning">
+  <div class="chapter-head">
+    <span class="chapter-no">المشهد الأول · من هو؟</span>
+    <h2>قبل أن نعرف مواقفه…<br>لنتعرّف إلى صاحبها</h2>
+    <p class="lead">بعض العظمة لا تُقاس بما يملكه الإنسان، بل بما يختاره حين يقف أمام الحق.</p>
+  </div>
+  <p>هو سعد بن معاذ بن النعمان الأنصاري الأوسي رضي الله عنه، من كبار الصحابة وسادة الأنصار في المدينة المنورة. كان ذا مكانة واحترام بين قومه، وعُرف بقوة الشخصية والقيادة.</p>
+  <p>لكن المكانة وحدها لا تصنع أثرًا خالدًا. ظهرت عظمته الحقيقية في إيمانه ومواقفه وتحمّله للمسؤولية، فصار مثالًا لرجلٍ لم يجعل مكانته حاجزًا بينه وبين الحق.</p>
+  <div class="divider">✧</div>
+  <div class="feature-grid">
+    <div class="feature"><span class="icon">✦</span><div><h3>مكانة</h3><p>سيدٌ في قومه، وصاحب تأثير بينهم.</p></div></div>
+    <div class="feature"><span class="icon">☾</span><div><h3>إيمان</h3><p>اختار الحق حين تبيّن له، ولم يتردد في اتباعه.</p></div></div>
+    <div class="feature"><span class="icon">◇</span><div><h3>أثر</h3><p>لم يحتفظ بالخير لنفسه، بل امتد أثره إلى قومه.</p></div></div>
+  </div>
+</section>
+
+<section class="chapter reveal" id="islam">
+  <div class="chapter-head">
+    <span class="chapter-no">المشهد الثاني · التحوّل</span>
+    <h2>لحظةٌ غيّرت الطريق</h2>
+    <p class="lead">حين وصلته دعوة الإسلام، لم تجعل مكانته منه أسيرًا لما اعتاده؛ بل استمع، وتفكّر، ثم اتبع الحق.</p>
+  </div>
+  <p>عندما أرسل رسول الله ﷺ مصعب بن عمير رضي الله عنه إلى المدينة ليعلّم الناس الإسلام، كان لإسلام سعد بن معاذ أثرٌ عظيم. أسلم سعد، ثم رجع إلى قومه ودعاهم إلى الإسلام، فكان إسلامه سببًا في إسلام كثيرٍ منهم.</p>
+  <p>تخيّلي أثر شخصٍ واحد حين يصدق في اختياره: لا يقف الخير عنده، بل ينتقل إلى أسرته ومجتمعه ومن حوله. لقد استخدم سعد مكانته في نشر الخير، بدل أن يجعلها سببًا للابتعاد عن الحق.</p>
+  <div class="quote">«العظمة ليست أن تتمسّك بمكانتك، بل أن تتبع الحق مهما كان.»<small>تأمل مستوحى من سيرته</small></div>
+</section>
+
+<section class="immersive" id="light-scene">
+  <div class="path-art" aria-hidden="true">
+    <svg viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid slice">
+      <defs><linearGradient id="road" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9bd79" stop-opacity=".02"/><stop offset="1" stop-color="#d9bd79" stop-opacity=".22"/></linearGradient></defs>
+      <path d="M370 700 C450 530 420 420 500 290 C565 185 520 100 500 0 L600 0 C620 130 650 190 575 315 C490 455 540 550 630 700Z" fill="url(#road)"/>
+      <path d="M370 700 C450 530 420 420 500 290 C565 185 520 100 500 0" fill="none" stroke="#d9bd7950" stroke-width="1"/>
+      <path d="M630 700 C540 550 490 455 575 315 C650 190 620 130 600 0" fill="none" stroke="#d9bd7950" stroke-width="1"/>
+      <g fill="#d9bd79" opacity=".7"><circle cx="180" cy="180" r="1.5"/><circle cx="780" cy="150" r="1.5"/><circle cx="250" cy="450" r="1"/><circle cx="820" cy="470" r="1.5"/><circle cx="690" cy="90" r="1"/><circle cx="310" cy="100" r="1.5"/></g>
+    </svg>
+  </div>
+  <div class="path-content">
+    <span class="chapter-no">لحظة تفاعلية</span>
+    <h2>اقتربي من النور</h2>
+    <p class="hint">في كل سيرةٍ نورٌ نهتدي به. المسِي نقطة النور لتكتشفي المعنى الذي تخبّئه هذه المحطة.</p>
+    <button class="lightpoint" type="button" id="lightBtn" aria-expanded="false" aria-controls="lightReveal" aria-label="اكتشفي معنى النور">✧</button>
+    <div class="hint-small">اضغطي على نقطة النور</div>
+    <div class="discovery" id="lightReveal">
+      <h3>أن يتحوّل الإيمان إلى أثر</h3>
+      <p>لم يكن إسلام سعد رضي الله عنه أمرًا خفيًّا بلا أثر؛ فقد دعا قومه إلى الخير. وهنا يبرز السؤال: ما الخير الذي أستطيع نشره بما عندي من علمٍ أو خلقٍ أو قدرة؟ ليس المطلوب أن أفعل كل شيء، بل أن أبدأ بصدق.</p>
+    </div>
+  </div>
+</section>
+
+<section class="chapter reveal" id="badr">
+  <div class="chapter-head">
+    <span class="chapter-no">المشهد الثالث · يوم بدر</span>
+    <h2>حين احتاج الحق إلى موقف</h2>
+    <p class="lead">تظهر حقيقة العهد حين يأتي وقت الوفاء به.</p>
+  </div>
+  <p>عندما خرج المسلمون إلى بدر، استشار رسول الله ﷺ أصحابه في مواجهة قريش، وكان يريد أن يعرف موقف الأنصار خاصةً. فقام سعد بن معاذ رضي الله عنه، وأكّد وقوف الأنصار مع رسول الله ﷺ واستعدادهم لنصرته.</p>
+  <p>كان موقفه دليلًا على صدق العهد وقوة الإيمان؛ فلم يكن كلامًا يقال في وقت الراحة، بل موقفًا واضحًا في لحظةٍ احتاج فيها المسلمون إلى الثبات.</p>
+  <div class="reflection-box">
+    <span class="chapter-no">توقفي قليلًا</span>
+    <h2 style="font-size:34px">ما معنى الثبات؟</h2>
+    <p>الثبات ليس أن نقول إننا أقوياء، بل أن نظهر صدقنا عندما تأتي المواقف، وأن نختار الصواب حتى لو احتاج إلى شجاعة.</p>
+  </div>
+</section>
+
+<section class="chapter reveal" id="khandaq">
+  <div class="chapter-head">
+    <span class="chapter-no">المشهد الرابع · غزوة الخندق</span>
+    <h2>مسؤوليةٌ لا تختفي في الشدائد</h2>
+  </div>
+  <p>في غزوة الخندق، شارك سعد رضي الله عنه في الدفاع عن المدينة مع المسلمين، وأصابه سهم في أكحله، وهو عرق في الذراع. وكانت إصابته شديدة، ودعا الله أن يبقيه حتى يرى ما يكون في أمر بني قريظة بعد نقضهم العهد أثناء الغزوة.</p>
+  <p>وبعد انتهاء الخندق، نزل بنو قريظة على حكم سعد بن معاذ رضي الله عنه، فحكم فيهم. وتُظهر هذه المحطة تحمّله للمسؤولية في ظرفٍ صعب، وتذكّرنا بأن القرارات الكبيرة تحتاج إلى وعيٍ وتحمّلٍ للعواقب.</p>
+  <div class="divider">✧</div>
+  <p class="lead" style="text-align:center">المسؤولية ليست لقبًا نحمله، بل أمانةٌ نُسأل عن طريقة حملها.</p>
+</section>
+
+<section class="chapter reveal" id="lessons">
+  <div class="chapter-head">
+    <span class="chapter-no">المشهد الخامس · اكتشفي الأثر</span>
+    <h2>أيُّ خُلُقٍ تريدين أن تحملي معك؟</h2>
+    <p class="lead">اختاري إحدى الصفات، وتأمّلي كيف يمكن أن تتحول من كلمةٍ جميلة إلى عملٍ يومي.</p>
+  </div>
+  <div class="choice-row">
+    <button class="choice" type="button" data-choice="0"><span class="icon">✦</span><strong>الثبات</strong><span>أن أتمسك بالخير</span></button>
+    <button class="choice" type="button" data-choice="1"><span class="icon">⚖</span><strong>العدل</strong><span>أن أنصف حتى عند الاختلاف</span></button>
+    <button class="choice" type="button" data-choice="2"><span class="icon">♡</span><strong>نشر الخير</strong><span>أن أجعل لوجودي أثرًا طيبًا</span></button>
+  </div>
+  <div class="choice-detail" id="choiceDetail" aria-live="polite"></div>
+</section>
+
+<section class="chapter reveal" id="ending">
+  <div class="chapter-head">
+    <span class="chapter-no">المشهد السادس · أثرٌ لا يُنسى</span>
+    <h2>حين بقي الأثر بعد الرحيل</h2>
+  </div>
+  <p>اشتد جرح سعد بن معاذ رضي الله عنه بعد غزوة الخندق، وتوفي متأثرًا بإصابته في السنة الخامسة للهجرة. وقد ورد في الحديث الصحيح أن النبي ﷺ قال:</p>
+  <div class="quote">«اهتز عرش الرحمن لموت سعد بن معاذ»<small>حديث صحيح</small></div>
+  <p>إنها منزلة عظيمة تذكّرنا بفضل سعد ومكانته، وتدعونا إلى التأمل في معنى الإيمان والعمل الصالح. فالسيرة ليست أحداثًا من الماضي فقط؛ بل معانٍ يمكن أن تهدي اختياراتنا اليوم.</p>
+</section>
+
+<section class="final" id="heart">
+  <div class="final-inner reveal">
+    <div class="seal">✧ ❈ ✧</div>
+    <div class="kicker">هكذا عَبَّرَ فُؤَادِي</div>
+    <h2>لم أعبر على الحكاية فقط…<br>بل عبرت هي إلى قلبي.</h2>
+    <p>حين قرأت سيرة سعد بن معاذ رضي الله عنه، لم أتوقف عند الأحداث وحدها، بل توقفت عند الإنسان الذي كان وراء تلك المواقف. علّمتني قصته أن الإيمان ليس كلماتٍ جميلة نرددها، بل مواقف صادقة تظهر في أفعالنا، وأن المكانة الحقيقية ليست فيما نملكه، بل فيما نقدمه من خير.</p>
+    <p>أريد أن أتعلم من سعد أن أكون شجاعةً في الحق، صادقةً في مواقفي، نافعةً لمن حولي، وأن أجعل لكل معرفة أتعلمها أثرًا في حياتي. سأبدأ بخطوةٍ واحدة صادقة؛ فقد يبدأ الأثر العظيم بعملٍ صغير يُبتغى به وجه الله.</p>
+    <div class="signature">إعداد الطالبة: أميرة عبدالفتاح<br>مسار جذور – الدفعة الرابعة<br>سعد بن معاذ رضي الله عنه | رحلة في الإيمان والمواقف</div>
+  </div>
+</section>
+</main>
+<footer>✦ هكذا عَبَّرَ فُؤَادِي ✦ · مشروع تعليمي تفاعلي</footer>
+<script>
+const progressline=document.getElementById('progressline');
+function updateProgress(){const max=document.documentElement.scrollHeight-innerHeight;progressline.style.width=(max>0?scrollY/max*100:0)+'%'}
+addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+const revealObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('seen');revealObserver.unobserve(entry.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+const lightBtn=document.getElementById('lightBtn'),lightReveal=document.getElementById('lightReveal');
+lightBtn.addEventListener('click',()=>{const open=lightReveal.classList.toggle('open');lightBtn.setAttribute('aria-expanded',String(open));lightBtn.textContent=open?'✦':'✧';if(open)lightReveal.scrollIntoView({behavior:'smooth',block:'nearest'})});
+const details=[
+'الثبات: أختار الصواب وأستمر عليه بأدب، حتى عندما لا يكون الطريق الأسهل. أبدأ اليوم بخطوة صغيرة ألتزم بها، وأطلب العون من الله.',
+'العدل: أسمع قبل أن أحكم، ولا أجعل محبتي لشخص أو اختلافي معه سببًا لظلمه. العدل يظهر في الكلمات الصغيرة كما يظهر في المواقف الكبيرة.',
+'نشر الخير: أستخدم ما تعلمته في نفع من حولي؛ بكلمة طيبة، أو مساعدة صادقة، أو مشاركة علم نافع. لا أحتاج إلى أن أكون مشهورة حتى أترك أثرًا.'
+];
+document.querySelectorAll('.choice').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.choice').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const d=document.getElementById('choiceDetail');d.textContent=details[Number(btn.dataset.choice)];d.classList.add('open')}));
+/* Optional soft ambient tone, only after the visitor chooses to enable it. */
+let audioCtx=null,osc=null,gain=null,audioOn=false;
+const soundBtn=document.getElementById('soundBtn');
+soundBtn.addEventListener('click',async()=>{try{if(!audioOn){const AC=window.AudioContext||window.webkitAudioContext;if(!AC){soundBtn.textContent='الصوت غير متاح';return}audioCtx=audioCtx||new AC();await audioCtx.resume();osc=audioCtx.createOscillator();gain=audioCtx.createGain();osc.type='sine';osc.frequency.value=174.61;gain.gain.value=.012;osc.connect(gain);gain.connect(audioCtx.destination);osc.start();audioOn=true;soundBtn.textContent='♫ الصوت: يعمل';soundBtn.setAttribute('aria-pressed','true')}else{if(osc){osc.stop();osc.disconnect();osc=null}if(gain){gain.disconnect();gain=null}audioOn=false;soundBtn.textContent='♫ الصوت: مغلق';soundBtn.setAttribute('aria-pressed','false')}}catch(e){soundBtn.textContent='الصوت غير متاح'}});
+</script>
+</body>
+</html>
